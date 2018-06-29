@@ -9,6 +9,8 @@ import { NgForm } from '@angular/forms';
 export class AppComponent {
   // f to local referance do form. Singup to nazwa dla viewchild
   @ViewChild('f') signupForm: NgForm;
+  defaultQuestion = 'teacher';
+  answer = '';
   suggestUserName() {
     const suggestedName = 'Superuser';
   }
